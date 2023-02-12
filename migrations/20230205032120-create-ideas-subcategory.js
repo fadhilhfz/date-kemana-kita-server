@@ -13,6 +13,7 @@ module.exports = {
         type: Sequelize.UUID,
         references: {
           model: "ideas",
+          key: "id",
         },
         onDelete: "cascade",
         onUpdate: "cascade",
@@ -21,6 +22,7 @@ module.exports = {
         type: Sequelize.UUID,
         references: {
           model: "subcategories",
+          key: "id",
         },
         onDelete: "cascade",
         onUpdate: "cascade",
